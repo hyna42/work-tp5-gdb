@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    puts("Hello TP5");
+    puts("******TP 5 *********");
 
     return 0;
 }
