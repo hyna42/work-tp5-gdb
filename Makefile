@@ -1,4 +1,4 @@
-FLAGS=-std=c2x -pedantic -Wall -Wextra -Werror main.c
+FLAGS=-std=c2x -pedantic -Wall -g -Wextra -Werror main.c
 
 SRC=main.c
 
@@ -9,4 +9,4 @@ prog: $(SRC)
 	@gcc $(FLAGS) -o prog
 
 clean:
-	@rm -f prog
+	@rm -f prog*
