@@ -6,7 +6,7 @@
 
 `make clean`
 
-## lancer gdb
+## lancement de gdb
 
 `make gdb`
 

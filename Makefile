@@ -1,12 +1,25 @@
-FLAGS=-std=c2x -pedantic -Wall -g -Wextra -Werror main.c
+#options du compilateur
+# l'option -g permet le débogage par le gdb
+FLAGS=-std=c2x -g -pedantic -Wall -Wextra -Werror main.c
 
+# Fichiers source
 SRC=main.c
 
-all: prog
-	@./prog
+# Compilateur C
+CC= gcc
 
-prog: $(SRC)
-	@gcc $(FLAGS) -o prog
+# Nom de l'executable
+PROG= prog
+
+all: $(PROG)
+	@./$(PROG)
+
+$(PROG): $(SRC)
+	@$(CC) $(FLAGS) -o $(PROG)
 
 clean:
-	@rm -f prog*
+	@rm -f $(PROG)*.o
+
+
+gdb: $(PROG)
+	@gdb $(PROG)
