@@ -1,9 +1,14 @@
 #options du compilateur
 # l'option -g permet le débogage par le gdb
-FLAGS=-std=c2x -g -pedantic -Wall -Wextra -Werror main.c
+FLAGS=-std=c2x -pedantic -Wall -Wextra -Werror -g 
 
 # Fichiers source
-SRC=main.c
+SRC=main.c \
+	functions/f1.c \
+	functions/f2.c \
+	functions/f3.c \
+	functions/f4.c \
+	functions/f5.c
 
 # Compilateur C
 CC= gcc
@@ -15,7 +20,7 @@ all: $(PROG)
 	@./$(PROG)
 
 $(PROG): $(SRC)
-	@$(CC) $(FLAGS) -o $(PROG)
+	@$(CC) $(FLAGS) $(SRC) -o $(PROG)
 
 clean:
 	@rm -f $(PROG)*.o
