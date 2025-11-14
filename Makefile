@@ -1,4 +1,5 @@
 #options du compilateur
+
 # l'option -g permet le débogage par le gdb
 FLAGS=-std=c2x -pedantic -Wall -Wextra -Werror -g 
 
