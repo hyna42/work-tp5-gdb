@@ -6,8 +6,8 @@ void print_number(int leng, int arr[])
     puts("****** compter 5 lignes *********");
     for (int i = 0; i < leng; i++)
     {
-        printf("ligne %d ==> %d \n", i+1, arr[i]);
-        }
+        printf("ligne %d ==> %d \n", i + 1, arr[i]);
+    }
 }
 
 void f5(int leng)

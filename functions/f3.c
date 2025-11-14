@@ -3,6 +3,6 @@
 #include "../headers/f4.h"
 void f3(void)
 {
-    printf("Entrée dans f3 -> call f4");
+    puts("Entrée dans f3 -> call f4()");
     f4();
 }
