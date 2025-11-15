@@ -14,6 +14,7 @@ void f5(int leng)
 {
     printf("Entrée dans f5 :: call print_number() \n");
     int arr[5] = {7, 5, 6, 1, 0};
+    arr[10] = 42;
 
     print_number(leng, arr);
 }
